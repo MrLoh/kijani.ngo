@@ -7,7 +7,8 @@ const data = require('gulp-data')
 const stream = require('merge-stream')
 const path = require('path')
 const uglify = require('gulp-uglify')
-const babel = require('gulp-babel');
+const babel = require('gulp-babel')
+const server = require('gulp-server-livereload')
 
 function requireUncached($module) {
     delete require.cache[require.resolve($module)]
@@ -15,34 +16,50 @@ function requireUncached($module) {
 }
 
 
+// SERVE
+
+const SERVER_OPTIONS = {
+    livereload: true,
+    open: true,
+    port: 8000
+}
+
+const SOURCE_DIRECTORY = 'src'
+
+gulp.task('serve', () => {
+    gulp.src(SOURCE_DIRECTORY)
+        .pipe(server(SERVER_OPTIONS))
+})
+
+
 // STYLUS
 
-const stylInput = 'src/styles/*.styl'
-const stylOutput = 'src/styles/'
+const STYL_INPUT = 'src/styles/*.styl'
+const STYL_OUTPUT = 'src/styles/'
 
 gulp.task('styl', () => {
 	return gulp
-		.src(stylInput)
+		.src(STYL_INPUT)
 		.pipe(stylus())
 		.pipe(autoprefixer())
 		.pipe(cssmin())
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest(stylOutput))
+		.pipe(gulp.dest(STYL_OUTPUT))
 })
 
 
 // JS
 
-const jsInput = ["src/scripts/*.js", "!src/scripts/*min.js"]
-const jsOutput = "src/scripts/"
+const JS_INPUT = ["src/scripts/*.js", "!src/scripts/*min.js"]
+const JS_OUTPUT = "src/scripts/"
 
 gulp.task('js', () => {
 	return gulp
-		.src(jsInput)
+		.src(JS_INPUT)
 		.pipe(babel({presets: ['es2015']}))
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest(jsOutput))
+		.pipe(gulp.dest(JS_OUTPUT))
 });
 
 
@@ -53,11 +70,11 @@ const logEvent = (event) => {
 }
 
 gulp.task('watch', () => {
-	gulp.watch(stylInput, ['styl']).on('change', logEvent)
-	gulp.watch(jsInput, ['js']).on('change', logEvent)
+	gulp.watch(STYL_INPUT, ['styl']).on('change', logEvent)
+	gulp.watch(JS_INPUT, ['js']).on('change', logEvent)
 })
 
 
 // DEFAULT
 
-gulp.task('default', ['styl', 'js', 'watch'])
+gulp.task('default', ['styl', 'js', 'serve', 'watch'])
