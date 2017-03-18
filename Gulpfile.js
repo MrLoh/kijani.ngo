@@ -76,5 +76,5 @@ gulp.task('watch', () => {
 
 
 // DEFAULT
-
+gulp.task('build', ['styl', 'js'])
 gulp.task('default', ['styl', 'js', 'serve', 'watch'])
