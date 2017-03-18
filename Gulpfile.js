@@ -34,7 +34,7 @@ gulp.task('serve', () => {
 
 // STYLUS
 
-const STYL_INPUT = 'src/styles/*.styl'
+const STYL_INPUT = 'src/styles/index.styl'
 const STYL_OUTPUT = 'src/styles/'
 
 gulp.task('styl', () => {

@@ -1,37 +1,52 @@
-green = #499948
-green2 = #6dac6e
+@import vars
 
-dust = #93827d
-dust2 = #b5a5a0
-dust5 = #ece7e3
-
-black = #191817
-darkgray = #716d69
-midgray = #bbb6b4
-lightgray = #e8e6e3
-white = #f8f9f7
-
-
-@font-face {
-   font-family: Bree
-   font-style: bold
-   src: url('fonts/bree_bold.otf')
-}
-
-@font-face {
-   font-family: Merriweather
-   font-style: normal
-   src: url('fonts/merriweather.ttf')
-}
-
-@font-face {
-   font-family: Merriweather
-   font-style: bold
-   src: url('fonts/merriweather_bold.ttf')
-}
-
-
-html {
+html, body {
     background: white
     font-family: Merriweather
+    font-size: 14px
+    max-width: 100%
+    overflow-x: hidden
+    margin: 0
+    padding: 0
+}
+
+img {
+    width: 100%
+    vertical-align: top
+}
+
+a {
+    color: inherit
+    text-decoration: none
+}
+
+.button {
+    display: inline-block
+    background: green2
+    color: white
+    width: 5rem
+}
+
+main, header, footer, section {
+    margin: 0
+    width: 100%
+}
+
+header {
+    background: green2
+    position: relative
+    .logo {
+        position: absolute
+        top: 1rem
+        left: 1rem
+        width: 25vw
+    }
+    .hero {
+        width: 100%
+    }
+}
+
+.intro {
+    background: green2
+    color: white
 }
