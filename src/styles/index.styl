@@ -8,6 +8,12 @@ html, body {
     overflow-x: hidden
     margin: 0
     padding: 0
+    @media(max-width: 600px) {
+        font-size: 14px
+    }
+    @media(max-width: 420px) {
+        font-size: 12px
+    }
 }
 
 * {
@@ -28,14 +34,14 @@ a {
     display: inline-block
     background: green2
     color: white
-    width: 13rem
+    width: 12.5rem
     text-align: center
     font-family: bree
-    font-size: 1.75rem
+    font-size: 1.7rem
     font-weight: bold
     border-radius: 1rem
     padding: 0.5rem 1rem 0.25rem 1rem
-    margin: 1rem
+    margin: 0.75rem 1rem
     transition: all 0.5s
     &:hover {
         transform: scale(1.05)
@@ -46,6 +52,11 @@ a {
         width: 2.25rem
         padding-right: 0.5rem
         padding-top: 0.15rem
+    }
+    @media(max-width: 355px) {
+        width: 11rem
+        font-size: 1.25rem
+        .icon { width: 1.75rem }
     }
 }
 
@@ -91,11 +102,11 @@ header {
     }
 }
 
-.intro {
+section.intro {
     background: green2
     color: white
     text-align: center
-    padding: 2rem 0
+    padding: 2rem
     box-shadow: 0 0.25rem 0.5rem rgba(green, 0.35)
     h1 {
         font-size: 3rem
@@ -116,20 +127,38 @@ header {
             box-shadow: 1px 1px 1rem 0.5rem rgba(green, 0.65)
         }
     }
+    @media(max-width: 750px) {
+        h1 { font-size: 2rem }
+        p { font-size: 1.15rem }
+        .button { font-size: 1.5rem }
+    }
+    @media(max-width: 450px) {
+        padding: 1.5rem 1rem
+        h1 {
+            font-size: 1.7rem
+            margin-bottom: 1rem
+        }
+        p { font-size: 1rem }
+        .button { font-size: 1.25rem }
+    }
 }
 
-.areas {
-    padding: 2rem 2rem 3rem 2rem
+section.areas {
+    padding: 0 2rem 3rem 2rem
     text-align: center
     .area {
         display: inline-block
         width: 16.5rem
-        margin: 0 2rem
+        margin-right: 2rem
+        &:last-child {
+            margin-right: 0
+        }
         .pictogram {
             width: 70%
+            max-width: 12rem
             margin: 0 auto
             position: relative
-            height: 8rem
+            height: 10rem
             img {
                 margin: auto auto 0
                 position: absolute;
@@ -137,9 +166,6 @@ header {
                 left: 0
                 bottom: 0
                 right: 0
-                // vertical-align: bottom
-                // position: absolute
-                // bottom: 0
             }
         }
         h2 {
@@ -147,23 +173,55 @@ header {
             margin: 1rem 0 0.5rem 0
         }
         p {
-            margin: 0
+            margin: 0 auto
+            max-width: 40rem
+        }
+    }
+    @media(max-width: 930px) {
+        .area {
+            width: 100%
         }
     }
 }
 
-.map {
+section.map {
     border-top: 0.3rem solid green2
     border-bottom: 0.3rem solid green2
+    @media(max-width: 900px) {
+        height: 19.5rem
+        .map-container {
+            width: 200%
+            margin-left: -63%
+        }
+        img {
+            display: block
+            height: 19rem
+            width: auto
+            margin: 0 auto
+        }
+    }
+    @media(max-width: 600px) {
+        height: 17rem
+        img { height: 16.5rem }
+    }
+    @media(max-width: 400px) {
+        height: 15.5rem
+        img { height: 15rem }
+    }
 }
 
-.engage {
-    padding: 4rem 2rem
+section.engage {
+    padding: 4rem 0
     text-align: center
     h1 {
         font-size: 2.5rem
         color: midgray
         margin-bottom: 1rem
+    }
+    @media(max-width: 1040px) {
+        padding: 2rem 0
+        max-width: 40rem
+        margin: 0 auto
     }
 }
 
@@ -176,6 +234,7 @@ footer {
     ul.links {
         list-style-type: none
         margin-bottom: 2rem
+        line-height: 2rem
         li {
             display: inline-block
             margin-right: 1rem
@@ -212,5 +271,9 @@ footer {
         &:hover {
             color: green
         }
+    }
+    @media(max-width: 370px) {
+        padding: 1rem
+        font-size: 0.7rem
     }
 }
