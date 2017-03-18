@@ -3,11 +3,15 @@
 html, body {
     background: white
     font-family: Merriweather
-    font-size: 14px
+    font-size: 16px
     max-width: 100%
     overflow-x: hidden
     margin: 0
     padding: 0
+}
+
+* {
+    box-sizing: border-box
 }
 
 img {
@@ -24,7 +28,38 @@ a {
     display: inline-block
     background: green2
     color: white
-    width: 5rem
+    width: 13rem
+    text-align: center
+    font-family: bree
+    font-size: 1.75rem
+    font-weight: bold
+    border-radius: 1rem
+    padding: 0.5rem 1rem 0.25rem 1rem
+    margin: 1rem
+    transition: all 0.5s
+    &:hover {
+        transform: scale(1.05)
+        background: green
+        box-shadow: 1px 1px 0.5rem 0.1rem rgba(green, 0.65)
+    }
+    .icon {
+        width: 2.25rem
+        padding-right: 0.5rem
+        padding-top: 0.15rem
+    }
+}
+
+h1, h2 {
+    font-family: bree
+    font-weight: bold
+    font-size: 2rem
+    margin: 0
+    margin-bottom: 2rem
+}
+
+p {
+    margin: 0
+    margin-bottom: 1rem
 }
 
 main, header, footer, section {
@@ -32,9 +67,17 @@ main, header, footer, section {
     width: 100%
 }
 
+header, footer, section {
+    .container {
+        max-width: 55rem
+        margin: 0 auto
+    }
+}
+
 header {
     background: green2
     position: relative
+    box-shadow: 0 0.25rem 0.5rem rgba(green, 0.65)
     .logo {
         position: absolute
         top: 1rem
@@ -49,4 +92,123 @@ header {
 .intro {
     background: green2
     color: white
+    text-align: center
+    padding: 1rem 0
+    box-shadow: 0 0.25rem 0.5rem rgba(green, 0.35)
+    h1 {
+        font-size: 3rem
+    }
+    p {
+        font-size: 1.5rem
+        font-weight: bold
+    }
+    .button {
+        font-size: 2rem
+        background: white
+        color: green2
+        width: auto
+        padding: 0.75rem 1.5rem 0.5rem 1.5rem
+        margin-bottom: 2rem
+        &:hover {
+            background: white
+            box-shadow: 1px 1px 1rem 0.5rem rgba(green, 0.65)
+        }
+    }
+}
+
+.areas {
+    padding: 2rem 2rem 3rem 2rem
+    text-align: center
+    .area {
+        display: inline-block
+        width: 16.5rem
+        margin: 0 2rem
+        .pictogram {
+            width: 70%
+            margin: 0 auto
+            position: relative
+            height: 8rem
+            img {
+                margin: auto auto 0
+                position: absolute;
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                // vertical-align: bottom
+                // position: absolute
+                // bottom: 0
+            }
+        }
+        h2 {
+            color: green2
+            margin: 1rem 0 0.5rem 0
+        }
+        p {
+            margin: 0
+        }
+    }
+}
+
+.map {
+    border-top: 0.3rem solid green2
+    border-bottom: 0.3rem solid green2
+}
+
+.engage {
+    padding: 4rem 2rem
+    text-align: center
+    h1 {
+        font-size: 2.5rem
+        color: midgray
+        margin-bottom: 1rem
+    }
+}
+
+footer {
+    padding: 2rem
+    background: midgray
+    color: white
+    font-size: 0.8rem
+    text-align: center
+    ul.links {
+        list-style-type: none
+        margin-bottom: 2rem
+        li {
+            display: inline-block
+            margin-right: 1rem
+            &::after {
+                content: '|'
+                margin-left: 1rem
+            }
+            &:last-child::after {
+                content: ''
+                margin-left: 0
+            }
+        }
+        a {
+            padding: 0.1rem 0.25rem 0rem 0.25rem
+            border-top: 1px solid midgray
+            border-bottom: 1px solid midgray
+            &.active {
+                border-color: white
+            }
+            &:hover {
+                color: green
+                border-color: green
+            }
+        }
+    }
+    p {
+        margin: 0
+    }
+    .legal {
+        margin-bottom: 1.5rem
+    }
+    a {
+        transition: all 0.5s
+        &:hover {
+            color: green
+        }
+    }
 }
