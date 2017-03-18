@@ -8,4 +8,4 @@ CSS is written in [Stylus](http://stylus-lang.com/). For compilation and minifyi
 
 To develop locally simply `npm install` the required packages and run `npm start` to autocompile source files and serve with live reloading on `localhost:8000`.
 
-To deploy the site on GitHub Pages, simply run `npm run deploy`. The site will be live at https://kijaningo.github.io/interim-website/.
+To deploy the site on GitHub Pages, simply run `npm run deploy`. The site will be live at http://kijani.ngo.
