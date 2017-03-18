@@ -91,14 +91,35 @@ header {
     box-shadow: 0 0.25rem 0.5rem rgba(green, 0.65)
     max-height: 40rem
     overflow: hidden
+    color: white
     .logo {
         position: absolute
         top: 10%
         left: 5%
         width: 20%
     }
+    .slogan {
+        position: absolute
+        bottom: 0
+        width: 100%
+        line-height: 1.5em
+        margin: 0
+        text-align: center
+        font-size: 4.5rem
+        font-weight: normal
+        text-shadow: 0 0 2rem rgba(black, 0.5)
+    }
     .hero {
         width: 100%
+    }
+    @media(max-width: 750px) {
+        .slogan { font-size: 4rem }
+    }
+    @media(max-width: 550px) {
+        .slogan { font-size: 3.5rem }
+    }
+    @media(max-width: 450px) {
+        .slogan { font-size: 3rem }
     }
 }
 
