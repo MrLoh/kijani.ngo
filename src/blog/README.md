@@ -1,0 +1,1 @@
+this is a statically generated output from a blog originally hosted with Wordpress using https://wordpress.org/plugins/simply-static/
