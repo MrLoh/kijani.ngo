@@ -19,8 +19,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp",
-    "deploy": "gulp build && git subtree push --prefix src origin gh-pages"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
