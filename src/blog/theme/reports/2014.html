@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!--STYLES-->
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src="//use.typekit.net/ndr8xkb.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="../css/reports.min.css">
+
+	<!--FAVICON-->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel='icon' href='favicon.png' type='image/png'>
+
+	<!--META-->
+	<title>2014 Annual Report</title>
+
+</head>
+
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+
+<body>
+<div id="center">
+	<nav>
+		<ul>
+		<li>
+		<h3>what</h3>
+		<ul>
+		<li><a href="http://kijani.co">home</a></li>
+		<li><a href="http://blog.kijani.co">blog</a></li>
+		<!-- <li><a href="">contact</a></li> -->
+		</ul>
+		</li>
+		<!-- <li> -->
+		<!-- <h3>who</h3>
+		        <ul>
+		            <li><a href="">team</a></li>
+		            <li><a href="">values</a></li>
+		        </ul> -->
+		<!-- </li> -->
+		<li>
+		<h3>support us</h3>
+		<ul>
+		<li><a href="http://kijani.co/en/donate/">donate</a></li>
+		<!-- <li><a href="">press</a></li> -->
+		</ul>
+		</li>
+		<li>
+		<h3>follow us</h3>
+		<ul class="follow">
+		<li>
+		<a href="https://twitter.com/KijaniNGO">
+		<svg viewBox="0 0 94 80">
+		<path class="icon" d="M 92.73,9.43 C 89.3,11.03 85.62,12.11 81.75,12.59 85.7,10.11 88.73,6.17 90.16,1.47 86.46,3.77 82.37,5.45 78.02,6.35 74.53,2.44 69.56,0 64.06,0 53.5,0 44.94,9 44.94,20.11 44.94,21.68 45.11,23.22 45.44,24.69 29.55,23.85 15.46,15.84 6.03,3.68 4.39,6.65 3.44,10.1 3.44,13.79 3.44,20.76 6.82,26.92 11.95,30.52 8.81,30.42 5.87,29.51 3.29,28.01 3.29,28.09 3.29,28.18 3.29,28.26 3.29,38 9.88,46.13 18.62,47.98 17.02,48.44 15.33,48.68 13.59,48.68 12.35,48.68 11.16,48.56 9.99,48.32 12.42,56.31 19.48,62.12 27.85,62.28 21.31,67.68 13.06,70.89 4.1,70.89 2.56,70.89 1.04,70.8 -0.46,70.61 8,76.32 18.05,79.64 28.85,79.64 64.02,79.64 83.25,49.01 83.25,22.44 83.25,21.57 83.23,20.7 83.19,19.84 86.93,17 90.17,13.46 92.73,9.43 Z M 92.73,9.43"></path>
+		</svg>
+		</a>
+		</li>
+		<li>
+		<a href="https://www.facebook.com/kijani.ngo">
+		<svg viewBox="0 0 94 80">
+		<path class="icon" d="M 86.31,4.93 L 86.31,74.96 C 86.31,77.34 84.39,79.28 82.02,79.31 L 81.96,79.31 61.9,79.31 61.9,48.82 72.13,48.82 73.67,36.94 61.9,36.94 61.9,29.36 C 61.9,25.92 62.86,23.57 67.79,23.57 L 74.08,23.57 74.08,12.95 C 72.99,12.8 69.26,12.48 64.91,12.48 55.84,12.48 49.63,18.01 49.63,28.18 L 49.63,36.94 39.38,36.94 39.38,48.82 49.63,48.82 49.63,79.31 11.93,79.31 C 9.53,79.31 7.59,77.36 7.59,74.96 L 7.59,4.93 C 7.59,2.53 9.53,0.59 11.93,0.59 L 81.96,0.59 C 84.36,0.59 86.31,2.53 86.31,4.93 Z M 86.31,4.93"></path>
+		</svg>
+		</a>
+		</li>
+		<li>
+		<a href="https://www.youtube.com/c/KijaniCommunity">
+		<svg viewBox="0 0 94 80">
+		<path class="icon" d="M 56.33,39.82 L 42.22,47.48 C 42.22,42.43 42.22,37.51 42.22,32.44 46.93,34.89 51.54,37.32 56.33,39.82 Z M 38.34,20.99 C 34.93,21.03 31.52,21.25 28.13,21.49 25.63,21.66 23.58,22.78 22.46,25.11 21.88,26.29 21.42,27.59 21.3,28.88 20.97,32.28 20.73,35.69 20.66,39.1 20.6,42.07 20.74,45.03 20.95,47.99 21.08,49.83 21.35,51.68 21.79,53.46 22.49,56.28 24.39,57.96 27.23,58.48 28.61,58.74 30,58.91 31.39,58.96 36.83,59.15 42.27,59.28 48.75,59.45 54,59.28 60.27,59.07 66.55,58.82 68.39,58.74 70.13,58.26 71.59,57 73.29,55.52 73.92,53.51 74.21,51.42 75.06,45.11 75.03,38.77 74.62,32.44 74.48,30.3 74.3,28.15 73.54,26.11 72.62,23.59 70.86,21.97 68.25,21.65 65.2,21.27 62.14,21.09 59.09,21.04 52.17,20.95 45.25,20.93 38.34,20.99 Z M 91,17.22 L 91,62.78 C 91,72.29 83.39,80 74,80 L 20,80 C 10.61,80 3,72.29 3,62.78 L 3,17.22 C 3,7.71 10.61,0 20,0 L 74,0 C 83.39,0 91,7.71 91,17.22 Z M 91,17.22"></path>
+		</svg>
+		</a>
+		</li>
+		<li>
+		<a href="http://kijani.co/en/newsletter/">
+		<svg viewBox="0 0 94 80">
+		<path class="icon" d="M 91.22,0.17 C 89.48,0.89 2.82,31.57 1.19,32.19 -0.24,32.7 -0.55,33.93 1.19,34.65 3.23,35.47 20.58,42.45 20.58,42.45 L 20.58,42.45 32.12,47.07 C 32.12,47.07 87.44,6.22 88.16,5.71 88.87,5.2 43.55,51.48 43.55,51.48 L 49.88,54.66 49.88,54.66 C 49.88,54.66 73.66,67.49 75.3,68.41 76.83,69.23 78.66,68.52 79.18,66.67 79.69,64.51 93.67,3.76 93.98,2.43 94.18,0.68 93.06,-0.45 91.22,0.17 Z M 31.4,78.78 C 31.4,80.01 32.12,80.42 33.14,79.5 34.47,78.37 51.72,60.51 51.72,60.51 L 31.61,51.48 31.4,78.78 Z M 31.4,78.78"></path>
+		</svg>
+		</a>
+		</li>
+		<li>
+		<a href="http://blog.kijani.co/feed/">
+		<svg viewBox="0 0 94 80">
+		<path class="icon" d="M 20.34,53.36 C 12.99,53.36 7,59.33 7,66.68 7,74.02 12.98,80 20.34,80 27.7,80 33.68,74.03 33.68,66.68 33.68,59.34 27.69,53.36 20.34,53.36 Z M 86.93,71.14 C 86.65,32.53 52.85,0 12.87,0 11.94,0 11.19,0.75 11.19,1.68 L 11.19,17.1 C 11.19,18.02 11.94,18.78 12.87,18.78 44.31,18.78 68.03,41.49 68.03,71.62 68.03,72.55 68.78,73.3 69.71,73.3 L 85.25,73.3 C 85.28,73.3 85.3,73.3 85.32,73.3 86.25,73.3 87,72.55 87,71.62 87,71.46 86.97,71.29 86.93,71.14 Z M 12.87,26.29 C 11.94,26.29 11.19,27.04 11.19,27.97 L 11.19,40.29 C 11.19,41.21 11.94,41.97 12.87,41.97 32.93,41.97 44.9,53.06 44.9,71.63 44.9,72.55 45.65,73.3 46.58,73.3 L 58.82,73.3 C 59.75,73.3 60.5,72.55 60.5,71.63 60.5,47.89 37.8,26.29 12.87,26.29 Z M 12.87,26.29"></path>
+		</svg>
+		</a>
+		</li>
+		</ul>
+		</li>
+		</ul>
+	</nav>
+	<header>
+		<div class="top-bar">
+			<a class="logo" href="http://kijani.co/">
+				<svg viewBox="0 0 270 80" >
+					<g class="logo">
+						<g>
+							<path d="M 94.38,24.23 C 97.45,25.84 99.42,34.49 100.48,37.41 102.49,42.97 103.24,45.79 100.62,51.11 98.12,56.18 95.31,62.71 90.96,66.58 85.79,71.18 76.85,73.45 70.29,75.34 64.17,77.11 54.87,77.14 55.19,68.93 55.55,59.93 65.9,55.76 73.84,54.64 76.98,54.19 78.91,53.64 81.57,51.8 83.03,50.79 87.5,46.14 88.9,49.16 90.37,52.36 87.18,56.53 84.9,58.51 83.84,59.42 75.96,65.12 75.09,64.3 77.54,66.63 85.31,60.56 86.83,58.69 89.47,55.45 91.36,51.07 93.34,47.42 95.33,43.75 93.79,40.29 92.78,36.4 92.57,35.49 90.49,22.18 94.38,24.23 95.89,25 92.89,23.44 94.38,24.23 Z M 94.38,24.23" />
+							<path d="M 8.7,24.23 C 5.63,25.84 3.66,34.49 2.6,37.41 0.59,42.97 -0.16,45.79 2.46,51.11 4.96,56.18 7.77,62.71 12.12,66.58 17.29,71.18 26.23,73.45 32.79,75.34 38.91,77.11 48.21,77.14 47.89,68.93 47.53,59.93 37.18,55.76 29.24,54.64 26.1,54.19 24.17,53.64 21.51,51.8 20.05,50.79 15.58,46.14 14.18,49.16 12.71,52.36 15.9,56.53 18.18,58.51 19.24,59.42 27.12,65.12 27.99,64.3 25.54,66.63 17.77,60.56 16.25,58.69 13.61,55.45 11.72,51.07 9.74,47.42 7.75,43.75 9.29,40.29 10.3,36.4 10.52,35.49 12.59,22.18 8.7,24.23 7.21,25 10.2,23.44 8.7,24.23 Z M 8.7,24.23" />
+							<path d="M 10.97,18.73 C 10.07,16.98 21.83,8.51 23.21,7.61 28.4,4.18 33.71,2.98 39.95,1.44 54.01,-2.02 70.65,0.98 82.77,9.71 88.74,13.99 94.43,18.05 87.04,23.76 80.67,28.67 68.92,25.77 63.64,20.35 61.58,18.23 44.97,15.11 45.55,13.59 48.33,6.4 62.38,9.27 68.31,12.63 68.74,12.88 68.98,12.04 69.3,12.3 60.06,5.2 44.25,7.04 33.54,9.89 30.29,10.76 13.69,24.09 10.97,18.73 10.22,17.24 11.72,20.21 10.97,18.73 Z M 10.97,18.73" />
+						</g>
+						<g>
+							<path d="M 119.08,62.03 L 119.08,7.16 C 119.08,5.09 120.13,4.06 122.23,4.06 L 125.39,4.06 C 127.45,4.06 128.5,5.09 128.5,7.16 L 128.5,38.42 139.7,22.18 C 140.27,21.37 140.87,20.79 141.48,20.43 142.1,20.07 142.95,19.89 144.03,19.89 L 148.45,19.89 C 149.5,19.89 150.19,20.29 150.49,21.09 150.8,21.89 150.66,22.64 150.03,23.34 L 138.28,38.16 150.49,61.77 C 150.94,62.59 151,63.34 150.64,64.06 150.27,64.78 149.58,65.14 148.57,65.14 L 144.53,65.14 C 143.42,65.14 142.57,64.96 142,64.62 141.42,64.26 140.93,63.68 140.53,62.85 L 132.28,45.89 128.5,50.69 128.5,62.03 C 128.5,64.1 127.47,65.14 125.39,65.14 L 122.23,65.14 C 120.13,65.12 119.08,64.1 119.08,62.03 Z M 119.08,62.03" />
+							<path d="M 162.16,19.83 L 159,19.83 C 156.9,19.83 155.79,20.89 155.79,22.92 L 155.79,62.01 C 155.79,64.08 156.9,65.04 159,65.04 L 162.16,65.04 C 164.22,65.04 165.29,64.08 165.29,62.01 L 165.29,22.92 C 165.29,20.89 164.22,19.83 162.16,19.83 Z M 162.16,19.83" />
+							<path d="M 178.61,19.83 L 175.46,19.83 C 173.36,19.83 172.37,20.89 172.37,22.92 L 172.37,67.97 C 172.37,70.18 171.42,71.27 169.58,71.27 168.95,71.27 168.12,71.15 167.09,70.94 166.22,70.74 165.51,70.94 165.03,71.51 164.54,72.09 164.28,72.95 164.28,74.02 L 164.28,76.49 C 164.28,77.47 164.5,78.19 164.93,78.61 165.35,79.04 166.08,79.36 167.07,79.58 168.18,79.8 169.39,79.92 170.73,79.92 174.04,79.92 176.69,78.98 178.69,77.13 180.69,75.28 181.66,72.29 181.66,68.17 L 181.66,22.92 C 181.66,20.89 180.67,19.83 178.61,19.83 Z M 178.61,19.83" />
+							<path d="M 187.2,52.41 L 187.2,52.25 C 187.2,47.9 188.54,44.56 191.18,42.17 193.83,39.78 197.61,38.58 202.48,38.58 L 208.31,38.58 208.31,34.72 C 208.31,29.95 206.37,27.58 202.48,27.58 200.89,27.58 199.67,28.02 198.81,28.88 197.94,29.76 197.51,30.83 197.51,32.15 197.51,33.9 196.6,34.8 194.78,34.8 L 191.21,34.8 C 189.14,34.8 188.09,33.76 188.09,31.69 188.09,27.96 189.41,24.91 192.03,22.5 194.66,20.09 198.14,18.9 202.48,18.9 207.03,18.9 210.69,20.21 213.5,22.82 216.31,25.43 217.71,29.2 217.71,34.12 L 217.71,50.85 C 217.71,55.77 216.31,59.54 213.5,62.15 210.69,64.76 207.01,66.07 202.48,66.07 197.98,66.07 194.3,64.86 191.47,62.41 188.62,59.98 187.2,56.63 187.2,52.41 Z M 198.22,46.99 C 197.15,47.94 196.6,49.44 196.6,51.45 196.6,53.46 197.15,54.96 198.22,55.93 199.29,56.91 200.73,57.41 202.48,57.41 206.37,57.41 208.31,55.04 208.31,50.28 L 208.31,45.53 202.48,45.53 C 200.73,45.53 199.31,46.01 198.22,46.99 Z M 198.22,46.99" />
+							<path d="M 223.47,62.03 L 223.47,34.14 C 223.47,29.22 224.86,25.45 227.67,22.84 230.48,20.23 234.16,18.92 238.69,18.92 243.24,18.92 246.92,20.23 249.73,22.86 252.56,25.49 253.97,29.26 253.97,34.14 L 253.97,62.03 C 253.97,64.1 252.92,65.14 250.82,65.14 L 247.66,65.14 C 245.6,65.14 244.55,64.1 244.55,62.03 L 244.55,34.72 C 244.55,29.95 242.59,27.58 238.67,27.58 234.79,27.58 232.85,29.95 232.85,34.72 L 232.85,62.03 C 232.85,64.1 231.8,65.14 229.69,65.14 L 226.58,65.14 C 224.52,65.12 223.47,64.1 223.47,62.03 Z M 223.47,62.03" />
+							<path d="M 267.01,19.83 L 263.85,19.83 C 261.75,19.83 260.7,20.89 260.7,22.92 L 260.7,62.01 C 260.7,64.08 261.75,65.04 263.85,65.04 L 267.01,65.04 C 269.07,65.04 270,64.08 270,62.01 L 270,22.92 C 270,20.89 269.07,19.83 267.01,19.83 Z M 267.01,19.83" />
+						</g>
+					</g>
+				</svg>
+			</a>
+			<div class="nav-trigger">
+				<span class="menu-text">Menu</span><span class="menu-icon"></span>
+			</div>
+		</div>
+		<div class="hero-img">
+			<div class="default-back"></div>
+		</div>
+		<h1>2014 Annual Report</h1>
+	</header>
+	<main class="clearfix">
+		<div class="container">
+			<article title="2014 Annual Report">
+
+
+
+<section class="toc">
+
+<p>Kijani was started by Tobias and Daniel in October 2013, but in 2014 Kijani learned to walk. We expanded our team, clarified our vision, mission and values, developed first promotional materials, raised the first funds, and engaged the community on the ground.</p>
+
+<p>This annual report contains information about all the activities and processes we experienced in 2014. It is ment to provide insights into our work and lessons that we have learned and that might be valuable to our team and people in similar situations. This report might not be best suited for reading as one peace, but rather for reading about particular areas of interest.</p>
+
+<ul>
+    <li>
+        <a href="#wherewestartedfrom">Where We Started From</a>
+    </li>
+    <li>
+        <a href="#internationalteamprojectmanagement">International Team &amp; Project Management</a>
+        <ul>
+            <li>
+                <a href="#teamdevelopment">Team Development</a>
+            </li>
+            <li>
+                <a href="#firstemployees">First Employees</a>
+            </li>
+            <li>
+                <a href="#teammanagementcommunication">Team Management &amp; Communication</a>
+            </li>
+            <li>
+                <a href="#communicationtools">Communication Tools</a>
+            </li>
+            <li>
+                <a href="#regularmeetingsinnairobi">Regular Meetings in Nairobi</a>
+            </li>
+            <li>
+                <a href="#kijanimeetingsinberlin">Kijani Meetings in Berlin</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#activitiesaccomplishments">Activities &amp; Accomplishments</a>
+        <ul>
+            <li>
+                <a href="#crowdfundingvideoproduction">Crowdfunding Video Production</a>
+            </li>
+            <li>
+                <a href="#mediaproductioninkenya">Media Production in Kenya</a>
+            </li>
+            <li>
+                <a href="#ngo-registrationinkenyagermany">NGO-Registration in Kenya &amp; Germany</a>
+            </li>
+            <li>
+                <a href="#firsttreenursery">First Tree Nursery</a>
+            </li>
+            <li>
+                <a href="#researchproposals">Research Proposals</a>
+            </li>
+            <li>
+                <a href="#websiteandblog">Website and Blog</a>
+            </li>
+            <li>
+                <a href="#socialmedia">Social Media</a>
+            </li>
+            <li>
+                <a href="#establishingacorporateidentity">Establishing a Corporate Identity</a>
+            </li>
+            <li>
+                <a href="#baselinesurvey">Baseline Survey</a>
+            </li>
+            <li>
+                <a href="#seedsasdonationrewards">Seeds as Donation Rewards</a>
+            </li>
+            <li>
+                <a href="#plantfortheplanetacademy">Plant for the Planet Academy</a>
+            </li>
+            <li>
+                <a href="#nationalforestryprogramworkshops">National Forestry Program Workshops</a>
+            </li>
+            <li>
+                <a href="#forestbusinessmodeldevelopment">Forest Business Model Development</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#partnershipsestablished">Partnerships Established</a>
+        <ul>
+            <li>
+                <a href="#internationalfellowshipofreconciliationgermanyvb">International Fellowship of Reconciliation Germany (VB)</a>
+            </li>
+            <li>
+                <a href="#kenyaforestserviceskfs">Kenya Forest Services (KFS)</a>
+            </li>
+            <li>
+                <a href="#ministryofenvironmentofkenya">Ministry of Environment of Kenya</a>
+            </li>
+            <li>
+                <a href="#motherearthnetworkm-e-net">Mother Earth Network (M-E-NET)</a>
+            </li>
+            <li>
+                <a href="#sirikwawildlifetrust">Sirikwa Wildlife Trust</a>
+            </li>
+            <li>
+                <a href="#tist">TIST</a>
+            </li>
+            <li>
+                <a href="#kenyaforestworkinggroupkfwg">Kenya Forest Working Group (KFWG)</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#applicationsawards">Applications &amp; Awards</a>
+        <ul>
+            <li>
+                <a href="#climatecolab">Climate CoLab</a>
+            </li>
+            <li>
+                <a href="#tropicalresourcesinstitutegrant">Tropical Resources Institute Grant</a>
+            </li>
+            <li>
+                <a href="#otherlesssuccessfulapplications">Other Less Successful Applications</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#fundingfinancialstate">Funding &amp; Financial State</a>
+    </li>
+</ul>
+
+</section>
+<section>
+
+<h2 id="wherewestartedfrom">Where We Started From</h2>
+
+<p>At the beginning of the year, we had 5 team members in Kenya: Daniel, Dickens, Haron, David, and Liz (all based in Nairobi) and 3 team members in Germany: Tobias, Jannis, and Armin. We also had a couple advisors: Ibrahim Omondi, Emmanuel Omondi, Georg Wagener-Lohse, and Dave Whitehead.</p>
+
+<p>Kijani was not it’s own organization, and didn’t even have it’s name yet. We were the Springs of Africa Forestation Initiative. The only web presence we had, was through <a href="http://www.tobiaslohse.com/kenya/blog/">Tobias blog</a> and there was no Logo or visual identity yet. Our partners at that time were KFS, KEFRI, and the Mother Earth Network.</p>
+
+<p>Tobias had just left Kenya and Daniel was taking over the management of the Kenyan team, which was focused on building its capacity and developing first ideas for our implementation plan. Through Armin the German team had conceived the idea to produce Bonsais from Kenyan tree species and sell those to donors.</p>
+</section>
+<section>
+
+<h2 id="internationalteamprojectmanagement">International Team &amp; Project Management</h2>
+
+<p>Kijani is only alive through the team of people who commit their time, brains, and hands to taking up the challenge of developing sustainable forest models. The team has grown much this year, we have learned a lot in volunteer management and established digitial tools to effectively coordinate the work and share informations between the global team members.</p>
+
+<h3 id="teamdevelopment">Team Development</h3>
+
+<p>In 2014 the Kijani team expanded and some people that are very instrumental to our work joined the project. Especially Jannis was instrumental in recruiting some new core team members. Since the whole management of Kijani is done on a purely voluntary basis, it was a challenge to find the right balance between investing time into keeping team members up to date and empowering them on the one hand and getting things done on the other hand. We learned that two models for integrating team members have worked well: (1) people with a lot of initiative that find things to do that they are best at are most instrumental; (2) people that are given specific tasks with clearly defined measurable output in an area, where they have specific expertise.</p>
+
+<p>One core team member who joined this year and is instrumental to our operation needs to be mention here especially. Because we had no forestation expert at the beginning of the year, we searched for one through the network of the German National Academic Foundation (Studienstiftung des Deutschen Volkes) and soon found Urs Dieterich. As a Youth delegate to the UN Forum on Forests, master candidate at Yale in Environmental Management and Bachelor in Forestry Science he has been most instrumental to develop our forestation model and forest based businesses and also stepped in to enrich the management of Kijani with his experience and drive, especially during his 3 Month stay in Kenya at the end of 2014.</p>
+
+<p>We had many other volunteers who joined the team and helped to move Kijani forward. Without their support, Kijani would not be what it is and we are very grateful for the contribution from each one of them:</p>
+
+<ul>
+<li>Zach Harris designed our Logo.</li>
+<li>Robin Matzke helped us to navigate the legal difficulties of registering our German NGO and researched the legal implications of giving seeds to donors, together with Sascha Groß.</li>
+<li>Denise Fischer helped to get our social media channels going and develop research proposals</li>
+<li>Thomas Mayer consulted on marketing.</li>
+<li>Christiane Lohse and Svantje Woltersdorf test grew our first seeds in German living rooms.</li>
+<li>Constanze Blum consulted on Community Engagement and together with Julian helped to create the baseline survey.</li>
+<li>Corinne Chin (Marmanet set), and Kiran and Svantje Woltersdorf (Berlin set) did the filming for the Crowdfunding video.</li>
+<li>Justin Wachira consulted on the creation of the Crowdfunding video.</li>
+<li>Kevin Golden helped to develop the Corporate Design of Kijani and implement some promotional materials.</li>
+<li>Lukas Stopczynski developed some promotional ideas.</li>
+<li>Frithjof Gressmann implemented the back-end for our blog.</li>
+<li>Roman Hagenbrock cut the Crowdfunding video.</li>
+<li>Duncan Townsend provided us with his music for the Crowdfunding video.</li>
+<li>Erick Ogallo helped with an assessment of existing tree species in the rehabilitation area.</li>
+<li>Mina Skowronek is helping us to develop explanatory graphics for Kijani.</li>
+</ul>
+
+<h3 id="firstemployees">First Employees</h3>
+
+<p>In the fall 2014 we started paying a salary to two of our Kenyan team members. We see the financial appreciation of the work of our Kenyan team members as a central element to enabling full dedication to the cause of Kijani, to sustaining the momentum, and to giving a long-term perspective for Kijani’s local representation. Key will be to ensure a steady flow of financial resources over the next year to Kijani’s vital core: our Kenyan team who are the face of our organization to the rural community that we are working with and to our partners.</p>
+
+<p>David Oyaga, Manager of Community Engagement, is pursuing a Diploma in Community Development in Kenya. He is a people-oriented person and essential to gaining traction in the community. Through his acumen for community dynamics, we have successfully conducted numerous community forums, a baseline survey and just recently established a tree nursery. He will be instrumental as we establish more of a presence in Marmanet in 2015.</p>
+
+<p>Dickens Likhanga, Manager of Public Relations, holds a B.A. in Information Technology. From the very early days, his commitment to Kijani remains unshaken. He has been instrumental in building team spirit among the team in Kenya, as well as assisting with capacity building, technical issues and more recently in the development of business concepts for the region of Marmanet. As an employee, Dickens has established himself as a key face of Kijani to partners and stakeholders.</p>
+
+<h3 id="teammanagementcommunication">Team Management &amp; Communication</h3>
+
+<p>Effectively coordinating international team work is not an easy task, but it has become achievable in the 21st century, even without spending money. We had to learn a lot about the dynamics of voluntary work and have explored various online tools that let us communicate, share information, and collaborate on tasks with relatively small efforts.</p>
+
+<p>Timeplaning has been and still is a key challenge. Few people that want to volunteer are able to predict when they can complete any task that requires more than an hour of their time. We have experienced that the keyfaktor in timely task completion is not available time, but motivation. Unfortunately different people are motivated in very different manners, so keeping a close connection with volunteers is a key in ensuring their effective work. Finding the perfect balance between management time and team size is a continuing challenge, especially in Germany. Regular team meetings, direct phone calls, and clear expectations have proofen to be the most effective tools in managing a voluntary team. Another challenge is that our volunteers are mainly young people, who often experience drastic changes in time availability due to exam phases or changes in their employment or study situation. The only way to deal with this is keeping flexibel and having enough volunteers to keep the work going.</p>
+
+<p>We originally established 5 sub-teams: Forestation, Community, Promotion, Funding, and Management. In the beginning this worked really well, we had weekly or biweekly skype meeting and things moved forward. With time each team had more and more projects that different people were involved in. The Forestation and Community merged because there was too much overlap. So we partially moved to more project based meetings that were organized by the people heading the project. Central task management and information sharing tools are essential to still keeping an overview about the development of the project. We currently have weekly core team meetings, that everyone is invited to join and project based meetings on a regular or need-based shedule. There are also regular staff meetings in Kenya.</p>
+
+<h3 id="communicationtools">Communication Tools</h3>
+
+<p>We tried and established various online tools for sharing information, streamlining communication, and coordinating tasks.</p>
+
+<p>For <strong>information collection</strong> in the form of meeting notes, write ups, articles, and more, we are using <a href="http://evernote.com">Evernote</a> and have build a wiki structure through <a href="">linking notes</a> together. Each sub-team has an overview note, from where different topics are linked, those topic notes contain minutes from meetings where the topic was discussed and further links to resources. There are also notes with informations about partners, team members, mentors, etc. for internal reference, that are linked in relevant places. We leverage Evernote&#8217;s powerful search to find information, aided through a tagging system we have established that provides context about content type, authors, and related projects.</p>
+
+<p>To make <strong>communication</strong> more seamless, each team member has a firstname@kijani.co email address. We host our emails through a <a href="???">google for nonprofits</a> account and use groups for external contact addresses like contact@kijani.co and sub-team mailing-lists. We are also using <a href="http://glip.com">Glip</a> as a digital workspace, enabling us to chat with each other, have shared calendars and share and comment on drafts, mockups, comps, or evernotes. With it&#8217;s easy communication centered approach Glip has helped us to create an office atmosphere while sitting on different continents. We hold international meetings via <a href="http://skype.com">Skype</a> or <a href="???">google hangouts</a>.</p>
+
+<p>For <strong>task management</strong> we originally had a milestone plan as a PDF and everything else was handled through direct communication. We tried out <a href="http://asana.com">Asana</a> for a while but it was too complicated and not communication centered enough for most volunteers. We have gone back to using direct communication, checkboxes in minutes on Evernote, and Glip tasks. We are still in the process to determining the best system for keeping track of tasks. We are currently testing out <a href="http://trello.com">Trello</a> as a tool for the management to update the milestone plan and keep an overview of the overall project status.</p>
+
+<p>Occasionally files don&#8217;t fit into the Evernote context — like collaboration on designs, codebases for the website and blog, media resources, or spreadsheets. Therefore <strong>file sharing</strong> solutions were needed. There has not been a coordinated approach to this as of yet. We had a <a href="http://dropbox.com">Dropbox</a> for design projects and resources, various shared folders on <a href="http://drive.google.com">google drive</a> and some things just shared via mail. We have started to centralize and organize all those ressources on google drive now as everyone already has access to that via their email account. For <strong>code sharing</strong> we have an organization <a href="http://github.com/KijaniNGO">GitHub account</a>, our blog and website are hosted through Tobias <a href="http://dreamhost.com">dreamhost</a> account.</p>
+
+<h3 id="regularmeetingsinnairobi">Regular Meetings in Nairobi</h3>
+
+<p>Essential to any successful start-up project is to create a sense of team spirit and shared purpose. In Kenya, this has been facilitated through regular team bonding activities and meetings. Team members come together to discuss ideas in different topic areas during regular weekly meetings, as well as spend time working in the tree nursery in Karen on &#8220;Dirty Fridays&#8221;.</p>
+
+<h3 id="kijanimeetingsinberlin">Kijani Meetings in Berlin</h3>
+
+<p>Our German Kijani team members are a bit scattered over the republic, but most of them are in Berlin. There have been various personal meetings between some team members in Berlin.</p>
+
+<p>In October ??? we also had a weekend long meeting in Berlin, for which Urs and Denise where in town in addition to Jannis, Armin, and Tobias. At this meeting we discussed collaboration tools and our social media strategy, worked on our mission, vision and values, had a skype-speed-dating session between Kenyan and German team members, an energetic bilateral team meeting in which we performed a SWOT analysis of the project together, and developed a plan for a crowdfunding campaign. It was a great experience to get the Kenyan and German team members together and see the big motivation boost everyone got out of it.</p>
+
+<p>We also had a first Kijani &#8220;Stammtisch&#8221; (informal get together in a restaurant) with team members, NGO members, and guests in Berlin in December which was a really good experience in terms of team building. We hope to make this a regular monthly thing.</p>
+</section>
+<section>
+
+<h2 id="activitiesaccomplishments">Activities &amp; Accomplishments</h2>
+
+<p>There were many things that Kijani achieved in 2014. From identity formation over fundraising to planting first trees. Some activities were only going on in Kenya or Germany, some were coordinated between two or three continents. The following section will give an overview about the most important achievements and activities in 2014.</p>
+
+<h3 id="crowdfundingvideoproduction">Crowdfunding Video Production</h3>
+
+<p>??? MISSING ???</p>
+
+<h3 id="mediaproductioninkenya">Media Production in Kenya</h3>
+
+<p>In the fall of 2014 we ratcheted up the collection of photo and video footage of Marmanet, the Kijani team, and other environmental organization. Equipped with a high-quality camera we generated a couple hours of video material and many hundred photos. Both videos and photos will be accessible through our website, on Facebook, and on our Youtube channel. Happy viewing &amp; sharing!</p>
+
+<p>The photos comprise impressions of the Marmanet forest, of our Kenyan team, and of meetings with partner organizations. The pictures let one experience the living realities of our community from a local perspective as well as the aspirations and activities of the Kenyan environmental movement.</p>
+
+<p>The videos comprise interviews with representatives of Kenyan non-governmental organizations, the Kenyan Forest Service, and community members. Further, we created a series of “did you know” videos, in which Kijani team members explain topics relating to Kenyan forest management, climate change, community development, and youth empowerment. Lastly, several videos explain the motivations and backgrounds of our Kenyan team, enabling Kijani’s supporters and the general public to get to know the heart of Kijani on a personal level.</p>
+
+<h3 id="ngo-registrationinkenyagermany">NGO-Registration in Kenya &amp; Germany</h3>
+
+<p>Kijani started as a project of the NGO <a href="http://springsofafrica.com">Springs of Africa</a>, which has various small projects in Kenya and is registered in the US under 501c3 status. It became clear in the beginning of the year however, that we would need a separate structure in order to be eligible for some stipends. Furthermore we needed tax deductible status in Germany to raise donations.</p>
+
+<p>We started the process of registering an NGO (e.V.) in Germany in Summer. With legal support from Robin and Sascha, Jannis drafted a Constitution and we founded the German NGO on the 24th of August at Tobias place in Berlin with Christiane, Georg, Jannis, Armin, Svantje, Mina, Sascha and Lisa as the first members. Tobias (chairman), Armin (treasurer), and Svantje (vice chairwoman) were elected as the first board. Afterwards we had a little celebration. We consecutively opened a bank account and pursued tax deductible status in Germany. Unfortunately the process has taken very long due to several delays, but we expect to be receive tax deductible status in January.</p>
+
+<p>After wrapping our head around the legal requirements, we also started the registration process for NGO certification in June 2014 with the support of Haron, our legal advisor in Kenya. We expect to be officially certified in the coming months, after crossing a few bureaucratic hurdles. This will open up new doors for grant funding for the organization.</p>
+
+<h3 id="firsttreenursery">First Tree Nursery</h3>
+
+<p>Daniel, the co-founder of Kijani, established a tree nursery in Nairobi to test the viability of different tree species. The project has enabled Kijani to gain experience in tree nursery establishment and maintenance. Kijani members have participated in seed collection, watering, transplanting and the creation of potting material from scrap plastic. We have now established an on-site tree nursery in Marmanet, using the lessons learned from Nairobi as guiding principles. The on-site seed-bed contains 3 indigenous tree and 2 fruit tree varieties, with plans for expansion in 2015.</p>
+
+<h3 id="researchproposals">Research Proposals</h3>
+
+<p>In the summer of 2014 we drafted a number of research proposals to invite German and Kenyan students to conduct research projects with Kijani as part of their studies. By doing so, we intend to span our reach beyond our core team and to give students from different parts of the world to become involved in our initiative without requiring a consistent team membership. At the same time, this arrangement will allow Kijani to harness the brainpower of some of our young generation’s bright minds for our cause. Generating knowledge around the local realities of our project by collecting ecological or socioeconomic data in the field, or by conducting desk research about cultural or political aspects of the landscape of Kenyan forest management, environmental conservation, and community development, is a vital element in finding innovative approaches toward realizing our mission.</p>
+
+<p>We invite anybody compelled to engage in an independent research project with Kijani to contact us to elaborate the details.</p>
+
+<h3 id="websiteandblog">Website and Blog</h3>
+
+<p>The development of a <strong>first website</strong> was started in February by Tobias with support of Zach from <a href="???">birds and kings</a>, who created the logo, style, and a couple drawings for the website. The first <a href="http://kijani.co">website</a> focused on engaging donors who could receive seeds to grow their own Kenyan tree at home. The website was hand coded by Tobias and released in English and German on April 27 under the domain <a href="http://kijani.co">kijani.co</a> — we are planing to switch to a <a href="???">.ngo</a> top level domain as soon as they become available. The functionality to directly donate online via <a href="???">betterplace</a> was added soon after. An update of the website putting the project mission more into the focus is due to be released early in 2015, the conceptual development has been started in December.</p>
+
+<p>We also released our first <strong>blog</strong> <a href="http://www.tumblr.kijani.co">via tumblr</a> on the 7th of February. First articles were published by Daniel and Urs. The blog generated some responses and has been a tool for communicating the progress amongst team members and to our followers. After our corporate design was established we completely <strong>redesigned the blog</strong> with many more features, including author profiles and beautiful cover images. Frithjof set up a <a href="???">Wordpress</a> backend and Tobias hand coded a modern and completely responsive <a href="???">theme</a>. The <a href="http://www.blog.kijani.co">new blog</a> was released on December 17th. We also plan to release more articles in the next year.</p>
+
+<p>We have neglected the analysis of visitor numbers and origins in 2014, this will be improved in 2015.</p>
+
+<h3 id="socialmedia">Social Media</h3>
+
+<p>At Kijani we are passionate about engaging others. We think that telling our stories can be an inspiration and open up new perspectives. In addition to our <a href="http://blog.kijani.co">blog</a> we therefore created social media channels. Since our capacity is limited we have focused on our <a href="http://facebook.com/kijani.ngo"><strong>facebook page</strong></a> which we have populated with updates from our work, photos, our blogposts and interesting links to related topics. It has been very challenging to find a team member who continuously focuses on public relations and social media, which is why we have not yet achieved the consistency in publishing content that we would like. We are also on <strong>twitter</strong> as <a href="http://twitter.com/kijaniNGO">@kijaniNGO</a> and <a href="???">google+</a> but those channels are not updated regularly at the moment. There current purpose is only to be reachable via these networks.</p>
+
+<p>We have also created <strong>mailing lists</strong> to reach out to friends, family and our followers via <a href="http://mailchimp.com">Mailchimp</a> and developed a template in our corporate design. The mailing list was successfully used for engaging people during the voting for the <a href="">MIT Climate CoLab</a> popular choice award — which we won — and for a Christmas mailing to our supporters. We want to develop this mailing list further to engage the community of Kijani supporters and offer regular updates and interesting stories.</p>
+
+<p>We have to work on a more concise social media strategy in the future, building a purposefull connection to our supporters. The plan is to achieve this through developing more content in the form of written stories, images, and a podcast series — based on the footage we shot in Kenya last year. The main distribution channels will be our blog, mail, and facebook.</p>
+
+<h3 id="establishingacorporateidentity">Establishing a Corporate Identity</h3>
+
+<p>At Kijani we had a strong passion for design from the beginning on. Of course it is challenging to create a consistent corporate identy for a voluntary project, but we are happy with our progress.</p>
+
+<p>In the beginning of the year we didn&#8217;t have our own name yet. We were the Springs of Africa Forestation Initiative. It became clear in January that it would be beneficial to have our own organization and identity for promotion and grant applications. We searched for a name and finally settled with &#8220;Kijani&#8221; the Swahili word for leave or green. The benefits of that name were, that it is relatively unique, short, and memorable, covers our broad vision rather than focusing too narrowly on our current main activities, and highlights our African identity. It is also quite nice sounding and relatively easy to spell in German.</p>
+
+<p>The Kijani <strong>logo</strong> was developed by Zach from <a href="???">birds and kings</a>. The logo shows three hands in a circle that form a tree in the space left between them, or the other way round, a tree in the form of three hands in a circle. It captures the synergy and interdependency between communities and forests that lies at the heart of Kijani&#8217;s vision.</p>
+
+<p>The main <strong>color</strong> for Kijani obviously had to be green. Later in the year we refined our corporate design with the help of designer <a href="???">Kevin</a>, and selected more natural subdued colors and added a broad color palette with more brown, gray, and orange tones to the palette. We selected <a href="https://www.fontshop.com/families/yummo">Yummo</a> as the <strong>typeface</strong> for the logo that would express modernity and could be combined well with a serif that would provide a nice contrast and legibility for longer text — originally that was <a href="???">Gaspar</a>. In the refinement process we changed to <a href="???">Bree</a> as the main typeface for large text while keeping <a href="https://www.fontshop.com/families/yummo">Yummo</a> as an accent type. We also switched from Gaspar to <a href="???">Merriweather</a> as the main body typeface which would also be available for google docs and are currently using <a href="???">Blanch</a> as a fallback for <a href="https://www.fontshop.com/families/yummo">Yummo</a> on the web, due to licensing issues. The guidelines for photos and video are natural not too saturated colors and we are using green toned grayscale images for banners. We have created a first draft for a style-guide and the refined corporate design has been implemented in the <a href="http://blog.kijani.co">redesigned blog</a>. A redesign of the website is under way.</p>
+
+<h3 id="baselinesurvey">Baseline Survey</h3>
+
+<p>An important starting point to any community project is to conduct a baseline survey of the area. While we are still collecting ecological data of our project site, the team spent a week interviewing 10% of the 3000 homesteads in Marmanet for a socio-economic and historical baseline study. Armed with 300 surveys and a few umbrellas, the baseline survey team met in the small, sleepy town center called Kwa Wanjiku (or “Kwanjiku” for short) before venturing into the interior of Marmanet. In five pairs, each made up of one Kijani volunteer and one member of the local community, we collected data in each one of Marmanet’s five villages: Naserian, Majimbogo, Ngoru, Kaichakun and Lokiriama. The survey took 6 days overall and it went quite well. We gained some insight on the politics of the area and how this could interfere with our project in the future. We also gained some insight into the types of trees that we might be interested to grow, and also into the expectations of the community. We held a community forum to present the results of our findings, much to the interest and delight of the community. A baseline survey report will be compiled in the next month.</p>
+
+<h3 id="seedsasdonationrewards">Seeds as Donation Rewards</h3>
+
+<p>??? MISSING ???<br/>
+- Business Model Development<br/>
+- Successful Test-growing of Seedlings</p>
+
+<h3 id="plantfortheplanetacademy">Plant for the Planet Academy</h3>
+
+<p>Another highlight of the fall 2014 was a Tree Planting Academy that Kijani organized on November 21st in the community surrounding the Marmanet Forest. More than five hours busride away from Nairobi in the Kenyan highland, at 2300m elevation, 34 enthusiastic children in the age of ten to 14 years came together to join alongside several community leaders and representatives of partner organizations. One of the goals of the Academy was to directly work with the young generation to develop a new generation of community and environmental leaders in our project area and beyond. The day was exemplary for actively experiencing the beauty of nature and taking steps toward reinstating a healthy environment.</p>
+
+<p>The encounter of students from four schools from grade five to eight and the active planting of trees gave life to the role of the forest in climate change mitigation and adaptation. A PowerPoint presentation, made possible through a generator brought from Nairobi, was held by two Climate Change Ambassadors, i.e. children who have participated in another Academy organized in Nairobi in July 2014 by our befriended organization IDEAS for Kenya. The joy the students embodied was phenomenal and carried the Academy participants from the highland on a wave of enthusiasm for climate change action. The collaborative tree planting created a cordial and hopeful ambiance and an abundance of creative ideas about how to continue promoting tree planting in the community.</p>
+
+<h3 id="nationalforestryprogramworkshops">National Forestry Program Workshops</h3>
+
+<p>At the UN Forum on Forests conference in Nairobi in February, a speech by Urs Dieterich sparked the attention of Dr. Mercy Gichora, then the National Forests Coordination Expert for the Ministry of Environment.</p>
+
+<p>Meeting with Dr. Gichora, the Ministry of Environment invited Kijani to be a key player in the formulation of the National Forestry Program. This program brings together stakeholders from all around Kenya for dialogue on environmental sustainability with the aim to formulate a consensus on the best ways forward for Kenya to achieve the government’s vision of 10% forest cover by the year 2030.</p>
+
+<p>This has given Kijani the opportunity to extend its reach in the country. Kijani members had the chance to engage in stakeholder workshops at in Naivasha, Nakuru and Thika. The workshops split members into &#8220;thematic groups&#8221;, with Kijani participating in the groups Forests &amp; Productivity, Forests &amp; Energy and Forests &amp; Conservation group. Workshops will be ongoing in 2015. It is an honor to be a part of the process.</p>
+
+<h3 id="forestbusinessmodeldevelopment">Forest Business Model Development</h3>
+
+<p>Two of the major obstacles to forest rehabilitation in rural African communities include deforestation and over-grazing. Sustainable forestation is only achievable by controlling for these threats and allowing forest-based communities to realize the economic viability of trees. Without this, communities will continue to degrade valuable forests for livelihood purposes. In Marmanet, it is not only the community that poses a threat, but elephants that easily destroy tree saplings.</p>
+
+<p>Kijani has developed concepts for forest-based business and is incorporating these models into a tree-planting strategy that not only addresses the above threats but serves as a demonstration plot for community members, researchers and eco-tourists. The team in Kenya has progressed most effectively on two concepts in particular: bee-keeping and the harvesting of leaves from the &#8220;Stinging Nettle&#8221; medicinal bush, Urtica massaica. After a year of in depth consultation and research, the complete tree-planting strategy will be ready in January, 2015.</p>
+
+<p>During the long rains starting in April, 2015, we will begin the tree-planting process on 5 separate plots, each focused on a different aspect of sustainable forestation: fruit tree plantation, enrichment planting, agroforestry, medicinal tree plantation and riverine rehabilitation. Each plot will be protected by a buffer of thorny bushes used in apiculture and to keep out elephants, as well as another buffer of fodder trees and bushes to keep out livestock while meeting their nutritional requirements. The plots will provide revenue for Kijani, act as practical demonstration and training grounds for the community and contribute to forest rehabilitation. We aim to plant 12,000 multi-purpose trees in April (10% of the rehabilitation area) and rehabilitate 100 hectares in at least 6 years.</p>
+</section>
+<section>
+
+<h2 id="partnershipsestablished">Partnerships Established</h2>
+
+<p>Strategic partnerships have been integral to our progress this far. The following is a list of organizations that we have partnered with or are in the process of formalizing a partnership:</p>
+
+<h3 id="internationalfellowshipofreconciliationgermanyvb">International Fellowship of Reconciliation Germany (VB)</h3>
+
+<p>The German branch of the International Fellowship of Reconciliation (Versöhnungsbund) sponsored our project by providing us with a possibility to raise funds in Germany, as long as we are not a tax deductible NGO in Germany.</p>
+
+<h3 id="kenyaforestserviceskfs">Kenya Forest Services (KFS)</h3>
+
+<p>Kijani is in the process of signing a lease for 100 hectares in the North Marmanet forest through the Kenya Forest Services. This lease will allow us to use the land for forest rehabilitation purposes. KFS will also provide technical and personnel support for the rehabilitation effort. We have already worked closely with KFS on numerous projects including: GPS mapping of the rehabilitation area, an assessment of naturally occurring tree species and the baseline survey.</p>
+
+<h3 id="ministryofenvironmentofkenya">Ministry of Environment of Kenya</h3>
+
+<p>The Ministry of the Environment is in the process of formulating the National Forestry Program. This will report on the state of sustainability in forestry in Kenya and provide multi-level policy guidance in sustainable forest management for the future. Kijani assisted the Ministry with the mobilization of different stakeholders for workshops and dialogue, and has participated in workshops in various parts of Kenya including Nakuru, Naivasha and Thika</p>
+
+<h3 id="motherearthnetworkm-e-net">Mother Earth Network (M-E-NET)</h3>
+
+<p>The Mother Earth Network is an environmental trust organization in Kenya. Kijani and M-E-NET have collaborated on different environmental initiatives, including a tree-planting project in the urban slum of Dandora and an ecosystem restoration project in the Aberdare mountains. M-E-NET&#8217;s forestation expert, a graduate of Natural Resources Management from Kenyatta University in Kenya, is now an active volunteer for Kijani.</p>
+
+<h3 id="sirikwawildlifetrust">Sirikwa Wildlife Trust</h3>
+
+<p>Sirikwa Wildlife Trust in a youth-based environmental organization in Kenya that Kijani has recently partnered with. We aim to tap into Sirikwa&#8217;s youth network to mobilize stakeholders for the launch of Kijani&#8217;s forestation and education projects. Kijani has collaborated with Sirikwa on a tree-planting project in the Aberdare forest and an ecological assessment project in Marmanet. The latter project was cut short due to unexpected rains, but Sirikwa remains a close partner with Kijani and we are exploring ways to work together in the future.</p>
+
+<h3 id="tist">TIST</h3>
+
+<p>The International Small Group Tree-Planting Program has mobilized over 10,000 small groups in Kenya and has contributed to the plantation of over 7 million trees. Small groups receive training in tree-nursery establishment and conservation farming also receive carbon credit money for each tree planted. Through its extensive community-run monitoring infrastructure, TIST is able to accurately track growth of the project and the survival of each and every tree planted. Kijani visited TIST small groups in Meru and has developed a close connection with its founder, Ben Henneke, who has served the purpose of a mentor. We collaborated with TIST on a community forum in Marmanet where the TIST program was introduced to the community. We are exploring ways to work together with TIST and are confident of a strong and mutually beneficial partnership in the future.</p>
+
+<h3 id="kenyaforestworkinggroupkfwg">Kenya Forest Working Group (KFWG)</h3>
+
+<p>KFWG brings together stakeholders involved in forestry in Kenya for a monthly meeting where participants discuss and share developments in their field and organizations. Through these meetings, Kijani has gained the opportunity to network and also held a presentation about the baseline survey we conducted in Marmanet. KFWG is excited about our work and approached us for partnership. We are in the early process of finalizing the terms of the partnership, with KFWG aiming to utilize Kijani as a platform to engage youth in tree-planting and environmental activities. Because of KFWG&#8217;s credibility and network in the field, we are excited to take this further in 2015.</p>
+</section>
+<section>
+
+<h2 id="applicationsawards">Applications &amp; Awards</h2>
+
+<h3 id="climatecolab">Climate CoLab</h3>
+
+<p>A particular highlight of 2014 was Kijani’s participation—and win—in the renown <a href="http://climatecolab.org/">MIT Climate CoLab</a> competition. The Climate CoLab is organized by the Massachusetts Institute of Technology, one of the world’s leading universities, and creates yearly competitions to tackle one of the world’s most pressing problems: Climate Change. With over 17,000 members the Climate CoLab has developed into an internationally recognized hub for innovative solutions and social entrepreneurship.</p>
+
+<p>After successfully mastering the three levels of the competition—competition application and entry, semi-finalist selection, and finalist selection — Kijani won among all finalists in the category “Land use: Forestry, Agriculture, and Livestock.” This is an enormous honor to our initiative and was only possible due to the collaborative action our team proved to be capable of. Not only did we win the Judges’ Choice Award, but also the Popular Choice Award for mobilizing almost 1,500 online supporters.</p>
+
+<p>More information about our Climate CoLab proposal can be found on the MIT Climate CoLab <a href="http://kijani.co/CCL">website</a> and on our <a href="http://blog.kijani.co/2014/09/09/and-now-were-up-for-winning/">blog</a>.</p>
+
+<h3 id="tropicalresourcesinstitutegrant">Tropical Resources Institute Grant</h3>
+
+<p>??? MISSING ???</p>
+
+<h3 id="otherlesssuccessfulapplications">Other Less Successful Applications</h3>
+
+<p>The Echoing Green Climate Fellowship provides support for organizations working on climate change mitigation and adaptation projects. Every year, the prestigious award is granted to 20 fellows out of the thousands of applicants from throughout the world. After only 3 months since the birthing of our project, then known as the &#8220;Springs of Africa Forestation Initiative&#8221; and without a website, Kijani made their application. We advanced all the way to semi-finalist round! Not bad for a first attempt. Better luck this year!</p>
+
+<p>We also applied for the <a href="???">Engagementpreis der Studienstiftung</a> (price for voluntary engagement of the German National Merit Foundation) and were selected as a finalist but not the winner.</p>
+
+<p>Early in 2014 we furthermore applied for an office space stipend at the <a href="???">Social Impact Lab</a> in Berlin but without a developed plan about our activities in Germany we had no chance.</p>
+</section>
+<section>
+
+<h2 id="fundingfinancialstate">Funding &amp; Financial State</h2>
+</section>
+
+
+
+			</article>
+		</div>
+	</main>
+</div>
+
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/nav.min.js"></script>
+<!-- <script src="../js/toc.min.js"></script> -->
+</body>
+</html>
+
+

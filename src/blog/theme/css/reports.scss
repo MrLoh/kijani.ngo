@@ -1,0 +1,352 @@
+@import "general";
+@import "nav";
+
+header {
+	font-size: $em;
+	.hero-img {
+		.default-back {
+			width: 100%;
+			height: 100%;
+			max-width: $max-width;
+			position: fixed;
+			top: 0;
+		}
+		picture {
+			width: 100%;
+			max-width: $max-width;
+			position: fixed;
+			top: 0;
+			img {
+				margin: 0 auto;
+				display: block;
+				@media screen and (max-width: 1200px) {
+					width: 120%;
+					margin: 0 0 0 -10%;
+				}
+				@media screen and (max-width: 920px) {
+					width: 140%;
+					margin: 0 0 0 -20%;
+				}
+				@media screen and (max-width: 820px) {
+					width: 160%;
+					margin: 0 0 0 -30%;
+				}
+				@media screen and (max-width: 580px) {
+					width: 160%;
+					margin: 0 0 0 -30%;
+				}
+				@media screen and (max-width: 520px) {
+					width: 180%;
+					margin: 0 0 0 -40%;
+				}
+				@media screen and (max-width: 380px) {
+					width: 230%;
+					margin: 0 0 0 -65%;
+				}
+			}
+		}
+	}
+	h1 {
+		width: 100%;
+		position: relative;
+		margin: 0;
+		padding-top: 10*$em;
+		font-family: $headline-type;
+		font-size: 5*$em;
+		font-weight: 700;
+		letter-spacing: -0.015em;
+		line-height: 5*$em;
+		text-align: center;
+		color: $white;
+		text-shadow: 2px 2px 2px rgba($dark-gray,0.5);
+		@media screen and (max-width: 760px) {
+			font-size: 4*$em;
+		}
+		@media screen and (max-width: 600px) {
+			font-size: 2.3*$em;
+			letter-spacing: -0.01em;
+			line-height: 2.8*$em;
+		}
+	}
+}
+
+main {
+	margin-top: 5*$em;
+	width: 100%;
+	box-shadow: 0 -2px 2px rgba($dark-gray,0.5);
+	position: relative;
+	background: $dust5;
+	padding-bottom: 4*$em;
+	z-index: 1;
+	.container {
+		max-width: 67*$em;
+		margin: 0 auto;
+		position: relative;
+		@media screen and (max-width: 1100px) {
+			max-width: 61*$em;
+		}
+	}
+	@media screen and (max-width: 760px) {
+		margin-top: 2*$em;
+	}
+	@media screen and (max-width: 480px) {
+		margin-top: 1*$em;
+	}
+}
+
+section {
+	max-width: 50*$em;
+	background-color: $white;
+	padding: 1*$em 5*$em 3.5*$em 5*$em;
+	box-sizing: border-box;
+	margin: 4*$em auto;
+	box-shadow: 0 0 1px rgba($dust,0.1);
+	border-radius: 0.5*$em;
+	&.toc {
+		margin-top: 0;
+		border-radius: 0 0 0.5*$em 0.5*$em;
+	}
+	@media screen and (max-width: 850px) {
+		max-width: 100%;
+		border-radius: 0;
+	}
+	@media screen and (max-width: 520px) {
+		padding: 1*$em 5% 1*$em 5%;
+	}
+}
+
+.toc > ul {
+	list-style-type: none;
+	*list-style-type: decimal;
+	&:first-child {
+		counter-reset: l1counter;
+	}
+	& > li {
+		counter-increment: l1counter;
+		margin: 1*$em 0;
+		font-family: $headline-type;
+		font-weight: bold;
+		font-size: 1.2*$em;
+		&::before {
+			content: counter(l1counter, decimal) ")";
+			text-align: right;
+			display: inline-block;
+			width: 2*$em;
+			font-weight: bold;
+			font-size: 1.2*$em;
+			margin-left: -1*$em;
+		}
+		& > ul {
+			list-style-type: none;
+			*list-style-type: decimal-leading-zero;
+			&:first-child {
+				counter-reset: l2counter;
+			}
+			& > li {
+				counter-increment: l2counter;
+				margin: 0;
+				font-weight: normal;
+				font-size: 1*$em;
+				&::before {
+					content: counter(l2counter, decimal-leading-zero) " ";
+					font-weight: normal;
+					font-size: 1*$em;
+					text-align: right;
+					display: inline-block;
+					width: 3*$em;
+					margin-left: -2.3*$em
+				}
+			}
+		}
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+		text-shadow: none;
+		background: none;
+		cursor: pointer;
+		&:hover {
+			color: $green;
+		}
+	}
+	@media screen and (max-width: 520px) {
+		& > li, & > li::before {
+			font-size: 1.05*$em;
+			& > ul > li, & > ul > li::before {
+				font-size: 0.9*$em;
+			}
+		}
+	}
+}
+
+article {
+	width: 100%;
+	font-size: $em;
+	p, input, textarea {
+		font-family: $body-type;
+		font-size: 1*$em;
+		font-weight: normal;
+		text-align: justify;
+		line-height: 1.5*$em;
+		margin: 1.5*$em 0;
+	}
+	.dropcap {
+		float: left;
+		color: $green;
+		font-family: $accent-type;
+		font-weight: normal;
+		text-transform: capitalize;
+		font-size: 11*$em;
+		line-height: 3*$em;
+		padding: 1.25*$em 0.05*$em 1.5*$em 0;
+	}
+	a {
+		color: $green;
+		cursor: alias;
+		@include underline($white);
+	}
+	ul, ol, li {
+		font-family: $body-type;
+		line-height: 1.5*$em;
+		// text-align: left;
+		margin: 0;
+	}
+	ul, ol {
+		padding-left: 1.5*$em;
+	}
+	ul {
+		list-style-type: none;
+		li {
+			position: relative;
+			&::before{
+				content: "\2022";
+				display: block;
+				position: absolute;
+				left: -1.2*$em;
+				top: 0;
+				font-size: 1.6*$em;
+			}
+		}
+	}
+	h2 {
+		font-family: $headline-type;
+		letter-spacing: -0.02em;
+		font-size: 2.5*$em;
+		font-weight: 700;
+		line-height: 2.5*$em;
+		text-align: center;
+		margin: 3*$em 0;
+	}
+	h3, h4 {
+		font-family: $headline-type;
+		letter-spacing: -0.02em;
+		font-size: 1.5*$em;
+		font-weight: 700;
+		line-height: 1.5*$em;
+		margin: 1.5*$em 0;
+	}
+	figure {
+		position: relative;
+		margin: 1*$em 0;
+		overflow: hidden;
+		img {
+			width: 100%;
+			display: block;
+			position: relative;
+		}
+		figcaption {
+			position: absolute;
+			bottom:0;
+			box-sizing: border-box;
+			width: 100%;
+			height: 3.3*$em;
+			padding: 0.5em 1em;
+			font-family: $headline-type;
+			font-weight: 300;
+			font-size: 0.9*$em;
+			line-height: 1.3*$em;
+			color: $white;
+			background-color: rgba($black,0.5);
+			opacity: 0;
+			transform: translateY(100%);
+			transition: transform 0.4s, opacity 0.1s 0.3s;
+		}
+		&:hover, &:focus {
+			figcaption {
+				opacity: 1;
+				transform: translateY(0);
+				transition: transform 0.4s, opacity 0.1s;
+			}
+		}
+	}
+	blockquote {
+		position: relative;
+		border-left: solid 0.15*$em $black;
+		background: rgba($black, 0.025);
+		margin: 0 0.5*$em;
+		padding: 0.3*$em 4*$em 0.5*$em 1.5*$em;
+		font-family: $body-type;
+		font-style: italic;
+		cite {
+			display: block;
+			position: absolute;
+			bottom: 0*$em;
+			right: 0.6*$em;
+			text-align: right;
+			margin-top: 0.5*$em;
+			font-family: $headline-type;
+			font-style: normal;
+			font-size: 1*$em;
+			font-weight: 700;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			&::before {
+				content: "\2014";
+				padding-right: 0.5*$em;
+			}
+		}
+		&::before {
+			content: "\201C";
+			display: block;
+			position: absolute;
+			top: 1.8*$em;
+			left: -1*$em;
+			font-family: $headline-type;
+			font-style: normal;
+			font-size: 7*$em;
+		}
+	}
+	@media screen and (max-width: 520px) {
+		p, ol, ul, li, input, textarea {
+			font-size: 0.9*$em;
+			text-align: left;
+		}
+		ul li::before {
+			font-size: 1.3*$em;
+		}
+		h2 {
+			font-size: 2*$em;
+			text-align: left;
+		}
+		h3, h4 {
+			font-size: 1.3*$em;
+		}
+		figure {
+			width: 112%;
+			margin-left: -6%;
+			figcaption {
+				font-size: 0.75*$em;
+			}
+		}
+		blockquote {
+			padding-right: 2*$em;
+		}
+	}
+}
+
+
+@-moz-document url-prefix() {
+	article p:first-child:first-letter {
+		padding: 0.25*$em 0.05*$em 0 0;
+	}
+}

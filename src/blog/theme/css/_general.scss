@@ -1,0 +1,152 @@
+@import "colors";
+@import "fonts/blanch";
+
+$em: 16px;
+$accent-type: "Blanch", "Ubuntu Condensed", "Futura", sans-serif;
+$headline-type: "bree", "Ubuntu Condensed", "Futura", sans-serif;
+$body-type: "merriweather", "Georgia", serif;
+
+$max-width: 1920px;
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+	min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: $em;
+    font-family: sans-serif;
+    line-height: 1.5*$em;
+    color: $black;
+    background: $dark-gray;
+    position: relative;
+    z-index: -10;
+}
+
+#center {
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    background: $dust5;
+    position: relative;
+    z-index: -9;
+}
+
+.default-back {
+	background: $green3 url(./back.jpg) repeat;
+	background-size: 750px;
+	@media screen and (max-width: 1023px) {
+		background-size: 600px;
+	}
+	@media screen and (max-width: 590px) {
+		background-size: 450px;
+	}
+	@media screen and (max-width: 380px) {
+		background-size: 300px;
+	}
+}
+
+@mixin underline($background-color) {
+    text-shadow: 3px 0 0 $background-color, -3px 0 0 $background-color;
+    background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
+    background-repeat: repeat-x;
+    background-position: 0 95%;
+    -webkit-background-size: 100% 1.5px;
+    background-size: 100% 1.5px;
+}
+
+@mixin hyphenate {
+    -ms-word-break: break-all;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+@mixin placeholder($color) {
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: $color;
+	   opacity:  1;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color: $color;
+	   opacity: 1;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color: $color;
+	}
+}
+
+.center {
+    margin: 0 auto;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+picture, figure {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    img {
+        width: 100%;
+        transition: all 1s;
+    }
+    &.green-overlay::after {
+        content: "";
+        background: $green;
+        opacity: 0.5;
+        position: absolute;
+        width: 100%; height: 100%;
+        top: 0; left: 0;
+        z-index: 1;
+        transition: all 0.5s;
+		border-radius: inherit;
+    }
+}
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: gray;
+    filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
+
+.title {
+    color: $green;
+    font-family: $accent-type;
+    font-weight: normal;
+    font-size: 3*$em;
+    line-height: 2*$em;
+    margin: 0.7*$em 0 -0.2*$em 0;
+}
+
+.clearfix {
+    &::before, &::after {
+        content: " ";
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+.light-shadow {
+    box-shadow: 0 0 1px rgba($dust,0.1);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hidden {
+	display: none;
+}
