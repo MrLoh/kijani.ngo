@@ -336,6 +336,7 @@ article, .comment-area, .post-area {
 }
 
 #comments {
+	display: none;
 	form {
 		input, textarea {
 			border: none;
